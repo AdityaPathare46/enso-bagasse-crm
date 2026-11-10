@@ -1,0 +1,41 @@
+Season  cane(Mt)  AprMayONI  phase  bagasse(Mt)  pressmud(Mt)
+2015–16    74.00   0.950  El Niño    22.20   2.590
+2016–17    37.30   0.840  El Niño    11.19   1.306
+2017–18    76.76   0.335  Neutral    23.03   2.687
+2018–19    95.30  -0.210  Neutral    28.59   3.336
+2019–20    57.00   0.765  El Niño    17.10   1.995
+2020–21   101.33   0.185  Neutral    30.40   3.547
+2021–22   132.23  -0.480  Neutral    39.67   4.628
+2022–23   105.39  -0.845  La Niña    31.62   3.689
+2023–24   106.91   0.325  Neutral    32.07   3.742
+2024–25    84.33   0.600  El Niño    25.30   2.952
+
+OLS: slope=-35.18 (SE 10.41) Mt per degC, intercept=95.73, r=-0.767, R2=0.588, p=0.0097
+  bagasse slope = -10.55 Mt/degC; press mud slope = -1.23 Mt/degC
+Spearman rho=-0.842, p=0.0022
+Permutation p (two-sided, 20000) = 0.0089
+Bootstrap 95% CI r = [-0.93, -0.59]
+Without 2016-17: r=-0.754, p=0.0189
+ONI + linear trend: ONI coef=-28.86 (p=0.035), trend=2.87 Mt/yr (p=0.228)
+Sensitivity, JJA/JAS ONI, same year: r=-0.166, p=0.646
+Sensitivity, Apr-May ONI, one year earlier: r=-0.405, p=0.246
+Sensitivity, Mean of Apr-May ONI, current and previous year: r=-0.725, p=0.018
+
+Early warning (decade mean 87.1 Mt): hits=4, false alarms=0, misses=1, correct negatives=5; Fisher exact p=0.048
+  mean crush after El Nino springs 63.2 Mt vs others 103.0 Mt (-39%)
+
+LOOCV MAPE: baseline 34.8%, regression 27.2%, relative reduction 22.0%
+LOOCV median APE: baseline 19.5%, regression 20.7%
+Regression better in 5 of 10 seasons
+  2015–16: observed 74.0, regression 58.3, baseline 88.5
+  2016–17: observed 37.3, regression 73.9, baseline 92.6
+  2017–18: observed 76.8, regression 84.8, baseline 88.2
+  2018–19: observed 95.3, regression 104.7, baseline 86.1
+  2019–20: observed 57.0, regression 71.5, baseline 90.4
+  2020–21: observed 101.3, regression 87.9, baseline 85.5
+  2021–22: observed 132.2, regression 105.5, baseline 82.0
+  2022–23: observed 105.4, regression 143.5, baseline 85.0
+  2023–24: observed 106.9, regression 81.7, baseline 84.8
+  2024–25: observed 84.3, regression 73.0, baseline 87.4
+
+Figures written to figures
